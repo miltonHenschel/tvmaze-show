@@ -12,7 +12,6 @@ export const fetchShowsFromAPI = createAsyncThunk(
   async () => {
     const request = await fetch(defaultURL);
     const response = await request.json();
-    console.log(response);
     return response;
   },
 );
@@ -20,29 +19,28 @@ export const fetchShowsFromAPI = createAsyncThunk(
 const showsSlice = createSlice({
   name: 'shows',
   initialState,
-  reducers: {
-    setValue: (state, action) => action.payload,
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchShowsFromAPI.pending, (state) => ({
         ...state,
+        isLoading: true,
       }))
-      .addCase(fetchShowsFromAPI.fulfilled, (state) => ({
+      .addCase(fetchShowsFromAPI.fulfilled, (state, action) => ({
         ...state,
-        // categoriesItems: Object.entries(action.payload).map((item) => {
-        //   const category = { ...item };
-        //   console.log(category);
-        //   return category;
-        // }),
+        showsItems: Object.entries(action.payload).map((item) => {
+          const show = { ...item[1] };
+          return show;
+        }),
         isLoading: false,
       }))
       .addCase(fetchShowsFromAPI.rejected, (state) => ({
         ...state,
+        isLoading: true,
       }));
   },
 });
 
-export const { setValue } = showsSlice.actions;
+// export const { setValue } = showsSlice.actions;
 
 export default showsSlice.reducer;
