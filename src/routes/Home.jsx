@@ -9,13 +9,14 @@ function Home() {
   // const isLoading = useSelector((state) => state.shows.isLoading);
 
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(fetchShowsFromAPI());
   }, [dispatch]);
 
   return (
     <>
-      <h1>HOME</h1>
+      <h2>HOME</h2>
       {/* <div>
         {isLoading && <div>Loading...</div>}
         {!isLoading &&

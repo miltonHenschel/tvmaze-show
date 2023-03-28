@@ -35,7 +35,7 @@ const showsSlice = createSlice({
         //   console.log(category);
         //   return category;
         // }),
-        // isLoading: false,
+        isLoading: false,
       }))
       .addCase(fetchShowsFromAPI.rejected, (state) => ({
         ...state,
