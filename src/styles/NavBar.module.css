@@ -1,0 +1,15 @@
+.main__container {
+  background-color: cornflowerblue;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.me__auto {
+  display: flex;
+  gap: 1rem;
+}
