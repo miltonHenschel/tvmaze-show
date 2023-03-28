@@ -1,10 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
+import showsReducer from './shows/showsSlice';
 
 const store = configureStore({
-  reducer: {
-    // missions: missionsReducer,
-    // rockets: rocketReducer,
-  },
+  reducer: showsReducer,
 });
 
 export default store;

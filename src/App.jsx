@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import NavBar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Details from './routes/Details';
 import Home from './routes/Home';
 import './styles/index.css';
@@ -14,7 +14,8 @@ import './styles/index.css';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Home />}>
+      <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/details" element={<Details />} />
       </Route>,
@@ -23,7 +24,6 @@ function App() {
 
   return (
     <main className="main__container">
-      <NavBar />
       <RouterProvider router={router} />
     </main>
   );

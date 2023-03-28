@@ -1,33 +1,36 @@
-import { NavLink } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import React from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
+// import Container from 'react-bootstrap/Container';
+// import Navbar from 'react-bootstrap/Navbar';
+// import Nav from 'react-bootstrap/Nav';
 import { BsFillMicFill, BsChevronLeft, BsGear } from 'react-icons/bs';
+
 import styles from '../styles/NavBar.module.css';
 
-function NavBar() {
+function Navbar() {
   return (
     <>
-      <Navbar className={styles.main__container}>
-        <Container className={styles.container}>
-          <Nav className={styles.me__auto}>
+      <nav className={styles.main__container}>
+        <div className={styles.container}>
+          <div className={styles.me__auto}>
             <NavLink to="./">
               <BsChevronLeft />
             </NavLink>
-          </Nav>
-          <Navbar>Navbar</Navbar>
-          <Nav className={styles.me__auto}>
-            <Nav>
+          </div>
+          <div>Navbar</div>
+          <div className={styles.me__auto}>
+            <div>
               <BsFillMicFill />
-            </Nav>
-            <Nav>
+            </div>
+            <div>
               <BsGear />
-            </Nav>
-          </Nav>
-        </Container>
-      </Navbar>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <Outlet />
     </>
   );
 }
 
-export default NavBar;
+export default Navbar;
