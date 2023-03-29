@@ -28,7 +28,13 @@ function Home() {
   return (
     <Card bg="primary">
       {isLoading && (
-        <Spinner animation="border" variant="dark" className="mx-auto my-3" />
+        <Card
+          style={{ height: 'calc(100vh - 8vh)' }}
+          className="justify-content-center"
+          bg="primary"
+        >
+          <Spinner animation="border" variant="dark" className="mx-auto my-3" />
+        </Card>
       )}
       <Container>
         <Row>

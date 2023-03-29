@@ -7,7 +7,7 @@ import styles from '../styles/NavBar.module.css';
 function Navbar() {
   return (
     <>
-      <nav className={styles.main__container}>
+      <nav style={{ height: '8vh' }} className={styles.main__container}>
         <div className={styles.container}>
           <div className={styles.me__auto}>
             <NavLink to="./">
