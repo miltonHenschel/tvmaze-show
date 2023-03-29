@@ -26,10 +26,17 @@ function Home() {
   }, [dispatch]);
 
   return (
-    <Card bg="primary">
+    <Card style={{ backgroundColor: '#0DE6FD' }}>
+      {isLoading && (
+        <Card
+          style={{ height: 'calc(100vh - 8vh)' }}
+          className="justify-content-center"
+        >
+          <Spinner animation="border" variant="dark" className="mx-auto my-3" />
+        </Card>
+      )}
       <Container>
-        <Row>
-          {isLoading && <Spinner animation="border" variant="primary" />}
+        <Row style={{ backgroundColor: '#0DE6FD' }}>
           {!isLoading
             && showsItems.map((show) => (
               <Shows
@@ -38,6 +45,7 @@ function Home() {
                 name={show.name}
                 rating={show.rating.average}
                 image={show.image.medium}
+                detailsStatus={show.detailsStatus}
               />
             ))}
         </Row>
