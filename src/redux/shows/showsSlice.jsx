@@ -19,7 +19,21 @@ export const fetchShowsFromAPI = createAsyncThunk(
 const showsSlice = createSlice({
   name: 'shows',
   initialState,
-  reducers: {},
+  reducers: {
+    renderShowDetails: (state, action) => {
+      const newState = Object.entries(state)[0][1].map((item) => {
+        const show = JSON.parse(JSON.stringify(item));
+        // console.log(show.id);
+        // console.log(action.payload);
+        if (show.id !== action.payload) return show;
+        return { ...show, detailsStatus: true };
+        // console.log(show);
+        // return show;
+      });
+      // console.log(newState);
+      return { ...state, showsItems: newState };
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchShowsFromAPI.pending, (state) => ({
@@ -41,6 +55,6 @@ const showsSlice = createSlice({
   },
 });
 
-// export const { setValue } = showsSlice.actions;
+export const { renderShowDetails } = showsSlice.actions;
 
 export default showsSlice.reducer;

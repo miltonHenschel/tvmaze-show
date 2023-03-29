@@ -27,9 +27,11 @@ function Home() {
 
   return (
     <Card bg="primary">
+      {isLoading && (
+        <Spinner animation="border" variant="dark" className="mx-auto my-3" />
+      )}
       <Container>
         <Row>
-          {isLoading && <Spinner animation="border" variant="primary" />}
           {!isLoading
             && showsItems.map((show) => (
               <Shows
@@ -38,6 +40,7 @@ function Home() {
                 name={show.name}
                 rating={show.rating.average}
                 image={show.image.medium}
+                detailsStatus={show.detailsStatus}
               />
             ))}
         </Row>

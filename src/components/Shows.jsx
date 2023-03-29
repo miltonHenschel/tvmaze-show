@@ -4,10 +4,23 @@ import Card from 'react-bootstrap/Card';
 import Figure from 'react-bootstrap/Figure';
 import { BsChevronRight } from 'react-icons/bs';
 import Button from 'react-bootstrap/Button';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { renderShowDetails } from '../redux/shows/showsSlice';
 
+// let detailsStatus = false;
 function Shows({
   id, name, rating, image,
 }) {
+  const dispatch = useDispatch();
+
+  const handleShowDetails = () => {
+    // if (detailsStatus === false) {
+    dispatch(renderShowDetails(id));
+    //   detailsStatus = true;
+    // }
+  };
+
   return (
     <Col xs={6} md={3} className="mt-3">
       <Card
@@ -23,11 +36,19 @@ function Shows({
           </Figure>
           <Card.Title className="text-center">{name}</Card.Title>
           <Card.Subtitle className="mb-2">
-            Rating:
+            Rating:&nbsp;
             {rating}
           </Card.Subtitle>
-          <Button variant="dark" size="sm" className="w-75">
-            <BsChevronRight />
+
+          <Button
+            variant="dark"
+            size="sm"
+            className="w-75"
+            onClick={handleShowDetails}
+          >
+            <Link to="/details">
+              <BsChevronRight />
+            </Link>
           </Button>
         </Card.Body>
       </Card>
