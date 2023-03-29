@@ -23,14 +23,9 @@ const showsSlice = createSlice({
     renderShowDetails: (state, action) => {
       const newState = Object.entries(state)[0][1].map((item) => {
         const show = JSON.parse(JSON.stringify(item));
-        // console.log(show.id);
-        // console.log(action.payload);
         if (show.id !== action.payload) return show;
         return { ...show, detailsStatus: true };
-        // console.log(show);
-        // return show;
       });
-      // console.log(newState);
       return { ...state, showsItems: newState };
     },
   },

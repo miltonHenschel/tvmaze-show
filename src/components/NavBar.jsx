@@ -1,30 +1,34 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { BsFillMicFill, BsChevronLeft, BsGear } from 'react-icons/bs';
-
-import styles from '../styles/NavBar.module.css';
+import Nav from 'react-bootstrap/Nav';
+import Card from 'react-bootstrap/Card';
 
 function Navbar() {
   return (
     <>
-      <nav style={{ height: '8vh' }} className={styles.main__container}>
-        <div className={styles.container}>
-          <div className={styles.me__auto}>
+      <Card className="" bg="primary" text="light">
+        <Nav
+          fill
+          className="align-items-center"
+          style={{ height: '8vh', backgroundColor: '#0257d5' }}
+        >
+          <Nav.Item>
             <NavLink to="./">
-              <BsChevronLeft />
+              <BsChevronLeft style={{ color: '#fff' }} />
             </NavLink>
-          </div>
-          <div>Navbar</div>
-          <div className={styles.me__auto}>
-            <div>
+          </Nav.Item>
+          <Nav.Item className="">A</Nav.Item>
+          <Nav.Item className="d-flex flex-row">
+            <Nav.Item className="">
               <BsFillMicFill />
-            </div>
-            <div>
+            </Nav.Item>
+            <Nav.Item className="">
               <BsGear />
-            </div>
-          </div>
-        </div>
-      </nav>
+            </Nav.Item>
+          </Nav.Item>
+        </Nav>
+      </Card>
       <Outlet />
     </>
   );

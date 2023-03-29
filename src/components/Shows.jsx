@@ -8,17 +8,13 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { renderShowDetails } from '../redux/shows/showsSlice';
 
-// let detailsStatus = false;
 function Shows({
   id, name, rating, image,
 }) {
   const dispatch = useDispatch();
 
   const handleShowDetails = () => {
-    // if (detailsStatus === false) {
     dispatch(renderShowDetails(id));
-    //   detailsStatus = true;
-    // }
   };
 
   return (
@@ -41,9 +37,9 @@ function Shows({
           </Card.Subtitle>
 
           <Button
-            variant="dark"
             size="sm"
             className="w-75"
+            style={{ backgroundColor: '#0DE6FD' }}
             onClick={handleShowDetails}
           >
             <Link to="/details">

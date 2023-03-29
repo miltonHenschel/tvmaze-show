@@ -26,18 +26,17 @@ function Home() {
   }, [dispatch]);
 
   return (
-    <Card bg="primary">
+    <Card style={{ backgroundColor: '#0DE6FD' }}>
       {isLoading && (
         <Card
           style={{ height: 'calc(100vh - 8vh)' }}
           className="justify-content-center"
-          bg="primary"
         >
           <Spinner animation="border" variant="dark" className="mx-auto my-3" />
         </Card>
       )}
       <Container>
-        <Row>
+        <Row style={{ backgroundColor: '#0DE6FD' }}>
           {!isLoading
             && showsItems.map((show) => (
               <Shows

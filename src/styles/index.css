@@ -8,13 +8,3 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-
-a {
-  font-weight: 500;
-  color: #fff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #e6e6e6;
-}
