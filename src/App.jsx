@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import {
   createBrowserRouter,
@@ -6,7 +7,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.jsx';
 import Details from './routes/Details';
 import Home from './routes/Home';
 import './styles/index.css';
