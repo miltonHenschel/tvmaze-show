@@ -90,19 +90,23 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- LIVE DEMO 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+-->
 
 <!--
 - [GitHub Pages](https://miltonhenschel.github.io/air-polution-metrics-app/)
 -->
 
+<!--
 - [Live demo: Soon](https://miltonhenschel.github.io/air-polution-metrics-app/)
   
 - [Video presentation: Soon]()
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+-->
 
 <!-- GETTING STARTED -->
 
