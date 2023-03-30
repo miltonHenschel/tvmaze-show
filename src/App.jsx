@@ -20,6 +20,7 @@ function App() {
         <Route path="/details" element={<Details />} />
       </Route>,
     ),
+    { basename: '/tvmaze-show' },
   );
 
   return (
