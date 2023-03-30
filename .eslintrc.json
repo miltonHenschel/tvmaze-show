@@ -23,7 +23,8 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "max-len": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }
