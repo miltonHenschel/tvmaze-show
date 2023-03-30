@@ -15,12 +15,11 @@ import './styles/index.css';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/air-polution-metrics-app" element={<Navbar />}>
-        <Route path="/air-polution-metrics-app" element={<Home />} />
-        <Route path="/air-polution-metrics-app/details" element={<Details />} />
+      <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Details />} />
       </Route>,
     ),
-    { basename: '/air-polution-metrics-app' },
   );
 
   return (
