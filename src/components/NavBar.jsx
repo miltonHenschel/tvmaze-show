@@ -18,7 +18,7 @@ function Navbar() {
               <BsChevronLeft style={{ color: '#fff' }} />
             </NavLink>
           </Nav.Item>
-          <Nav.Item className="">A</Nav.Item>
+          <Nav.Item className="">TV Shows</Nav.Item>
           <Nav.Item className="d-flex flex-row">
             <Nav.Item className="">
               <BsFillMicFill />
