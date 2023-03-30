@@ -18,37 +18,39 @@ function Shows({
   };
 
   return (
-    <Col xs={6} md={3} className="mt-3">
-      <Card
-        border="muted"
-        text="light"
-        bg="primary"
-        key={id}
-        style={{ width: 'auto' }}
-      >
-        <Card.Body className="d-flex flex-column align-items-center">
-          <Figure>
-            <Figure.Image alt={name} src={image} />
-          </Figure>
-          <Card.Title className="text-center">{name}</Card.Title>
-          <Card.Subtitle className="mb-2">
-            Rating:&nbsp;
-            {rating}
-          </Card.Subtitle>
+    <>
+      <Col xs={6} md={3} className="mt-3">
+        <Card
+          border="muted"
+          text="light"
+          bg="primary"
+          key={id}
+          style={{ width: 'auto' }}
+        >
+          <Card.Body className="d-flex flex-column align-items-center">
+            <Figure>
+              <Figure.Image alt={name} src={image} />
+            </Figure>
+            <Card.Title className="text-center">{name}</Card.Title>
+            <Card.Subtitle className="mb-2">
+              Rating:&nbsp;
+              {rating}
+            </Card.Subtitle>
 
-          <Button
-            size="sm"
-            className="w-75"
-            style={{ backgroundColor: '#0DE6FD' }}
-            onClick={handleShowDetails}
-          >
-            <Link to="/details">
-              <BsChevronRight />
-            </Link>
-          </Button>
-        </Card.Body>
-      </Card>
-    </Col>
+            <Button
+              size="sm"
+              className="w-75"
+              style={{ backgroundColor: '#0DE6FD' }}
+              onClick={handleShowDetails}
+            >
+              <Link to="/details">
+                <BsChevronRight />
+              </Link>
+            </Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    </>
   );
 }
 
