@@ -17,7 +17,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Navbar />}>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Details />} />
+        <Route path="/details" element={<Details />} />
       </Route>,
     ),
   );
