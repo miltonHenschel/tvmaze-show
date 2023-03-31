@@ -10,7 +10,6 @@ import {
 import Navbar from './components/Navbar.jsx';
 import Details from './routes/Details';
 import Home from './routes/Home';
-import './styles/index.css';
 
 function App() {
   const router = createBrowserRouter(
@@ -24,7 +23,7 @@ function App() {
   );
 
   return (
-    <main className="main__container">
+    <main className="main__container odd">
       <RouterProvider router={router} />
     </main>
   );

@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Spinner from 'react-bootstrap/Spinner';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-
+import {
+  Card, Container, Row, Spinner,
+} from 'react-bootstrap';
 import { fetchShowsFromAPI } from '../redux/shows/showsSlice';
 import Shows from '../components/Shows';
 import Searchbar from '../components/Searchbar';
-import '../styles/index.css';
 
 function Home() {
   const [showName, setShowName] = useState('');
@@ -37,30 +34,37 @@ function Home() {
 
   return (
     <>
-      <Card
-        style={{ backgroundColor: '#0DE6FD', minHeight: 'calc(100vh - 8vh)' }}
+      <Container
+        style={{
+          minHeight: 'calc(100vh - 8vh)',
+          width: '100vw',
+        }}
         className="pb-3"
       >
         {isLoading && (
           <Card
-            style={{ height: 'calc(100vh - 8vh)' }}
+            style={{
+              height: 'calc(100vh - 8vh)',
+              backgroundColor: '#4369b2',
+              borderColor: '#4369b2',
+            }}
             className="justify-content-center"
           >
             <Spinner
               animation="border"
-              variant="dark"
+              variant="light"
               className="mx-auto my-3"
             />
           </Card>
         )}
-        <Container>
+        <Container className="p-0">
           {!isLoading && (
             <Searchbar
               showName={showName}
               handleSearchShow={handleSearchShow}
             />
           )}
-          <Row style={{ backgroundColor: '#0DE6FD' }}>
+          <Row className="p-0">
             {!isLoading
             && (filteredShow.length === 0
               || filteredShow.length === showsItems.length)
@@ -86,7 +90,7 @@ function Home() {
               ))}
           </Row>
         </Container>
-      </Card>
+      </Container>
     </>
   );
 }

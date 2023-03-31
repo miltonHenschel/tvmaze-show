@@ -7,15 +7,11 @@ import Card from 'react-bootstrap/Card';
 function Navbar() {
   return (
     <>
-      <Card className="" bg="primary" text="light">
-        <Nav
-          fill
-          className="align-items-center"
-          style={{ height: '8vh', backgroundColor: '#0257d5' }}
-        >
+      <Card>
+        <Nav className="align-items-center" style={{ height: '8vh' }}>
           <Nav.Item>
             <NavLink to="./">
-              <BsChevronLeft style={{ color: '#fff' }} />
+              <BsChevronLeft />
             </NavLink>
           </Nav.Item>
           <Nav.Item className="">TV Shows</Nav.Item>
