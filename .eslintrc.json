@@ -15,8 +15,7 @@
   "extends": [
     "airbnb",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "airbnb-typescript"
+    "plugin:react-hooks/recommended"
   ],
   "plugins": ["react"],
   "rules": {
@@ -28,12 +27,5 @@
     "import/no-extraneous-dependencies": "off",
     "max-len": "off"
   },
-  "ignorePatterns": ["dist/", "build/"],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"]
-      }
-    }
-  }
+  "ignorePatterns": ["dist/", "build/"]
 }
