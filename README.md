@@ -101,9 +101,7 @@
 
 - [GitHub Pages](https://miltonhenschel.github.io/tvmaze-show/)
 
-<!--
-- [Video presentation: Soon]()
--->
+- [Video presentation](https://www.loom.com/share/77247b23cd784d4ebdcc1a4d5c8ab1ae)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
