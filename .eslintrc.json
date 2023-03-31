@@ -16,7 +16,7 @@
     "airbnb",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:import/recommended"
+    "airbnb-typescript"
   ],
   "plugins": ["react"],
   "rules": {
