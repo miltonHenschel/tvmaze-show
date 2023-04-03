@@ -41,7 +41,9 @@
 
 # 📖 TvMaze App <a name="about-project"></a>
 
-**TvMaze App** is a single page app that fetches a list of shows from the [TvMaze API](https://api.tvmaze.com/). Users that search for a TV show and see its details.
+**TvMaze App** is a single page app that fetches a list of shows from the [TvMaze API](https://api.tvmaze.com/). Users can search for a TV show and see its details.
+
+![tvmaze-laptop](https://user-images.githubusercontent.com/87370519/229634027-54766cda-062b-4f74-8fab-7a349f96af54.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -218,7 +220,7 @@ If you like this project then don't forget to give a star ⭐ on this repository
 
 I would like to thank:
 
-- **![](https://img.shields.io/badge/Microverse-blueviolet).**
+- **![](https://img.shields.io/badge/Microverse-blueviolet)**
 - [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for the design guidelines of this app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
