@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Figure from 'react-bootstrap/Figure';
 import { BsChevronRight } from 'react-icons/bs';
-import Button from 'react-bootstrap/Button';
+import {
+  Button, Figure, Card, Col,
+} from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { renderShowDetails } from '../redux/shows/showsSlice';
@@ -19,13 +18,16 @@ function Shows({
 
   return (
     <>
-      <Col xs={6} md={3} className="mt-3">
+      <Col xs={6} md={3} className="p-0">
         <Card
-          border="muted"
-          text="light"
-          bg="primary"
+          className="odd"
           key={id}
-          style={{ width: 'auto' }}
+          style={{
+            color: '#fff',
+            width: 'auto',
+            borderColor: '#4369b2',
+            borderRadius: '0',
+          }}
         >
           <Card.Body className="d-flex flex-column align-items-center">
             <Figure>
@@ -37,16 +39,17 @@ function Shows({
               {rating}
             </Card.Subtitle>
 
-            <Button
-              size="sm"
-              className="w-75"
-              style={{ backgroundColor: '#0DE6FD' }}
-              onClick={handleShowDetails}
-            >
-              <Link to="/details">
+            <Link to="/details">
+              <Button
+                size="sm"
+                style={{
+                  width: '15vw',
+                }}
+                onClick={handleShowDetails}
+              >
                 <BsChevronRight />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
       </Col>

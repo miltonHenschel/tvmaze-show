@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Shows component > should display 2 shows on the screen 1`] = `
+{
+  "showsItems": [
+    {
+      "ended": "2015-09-10",
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Thriller",
+      ],
+      "id": 1,
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
+      },
+      "language": "English",
+      "name": "Under the Dome",
+      "network": {
+        "country": {
+          "name": "United States",
+        },
+        "name": "CBS",
+        "officialSite": "https://www.cbs.com/",
+      },
+      "officialSite": "http://www.cbs.com/shows/under-the-dome/",
+      "rating": {
+        "average": 6.5,
+      },
+      "schedule": {
+        "days": [
+          "Thursday",
+        ],
+        "time": "22:00",
+      },
+      "status": "Ended",
+      "summary": "<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+      "type": "Scripted",
+    },
+    {
+      "ended": "2016-06-21",
+      "genres": [
+        "Action",
+        "Crime",
+        "Science-Fiction",
+      ],
+      "id": 2,
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg",
+      },
+      "language": "English",
+      "name": "Person of Interest",
+      "network": {
+        "country": {
+          "name": "United States",
+        },
+        "name": "CBS",
+      },
+      "officialSite": "http://www.cbs.com/shows/person_of_interest/",
+      "rating": {
+        "average": 8.8,
+      },
+      "schedule": {
+        "days": [
+          "Tuesday",
+        ],
+        "time": "22:00",
+      },
+      "status": "Ended",
+      "summary": "<p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \\"irrelevant\\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>",
+      "type": "Scripted",
+    },
+  ],
+}
+`;

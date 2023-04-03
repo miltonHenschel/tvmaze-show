@@ -41,7 +41,9 @@
 
 # 📖 TvMaze App <a name="about-project"></a>
 
-**TvMaze App** is a single page app that fetches a list of shows from the [TvMaze API](https://api.tvmaze.com/). Users that search for a TV show and see its details.
+**TvMaze App** is a single page app that fetches a list of shows from the [TvMaze API](https://api.tvmaze.com/). Users can search for a TV show and see its details.
+
+![tvmaze-laptop](https://user-images.githubusercontent.com/87370519/229634027-54766cda-062b-4f74-8fab-7a349f96af54.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,16 +51,17 @@
 
 <details>
   <summary>Client</summary>
-  <ul>
-<li><a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.svg" alt="html5" width="55" height="55"/></a></li>
-<li><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.svg" alt="css3" width="55" height="55"/></a></li>
-<li><a href="https://reactjs.org/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/react-js-icon.svg" alt="react js" width="55" height="55"/></a></li>
-<li><a href="https://redux.js.org/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.svg" alt="redux" width="55" height="55"/></a></li>
-<li><a href="https://vitejs.dev/" target="_blank"><img align="center" src="https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white" alt="Vite" width="55" height="55"/></a></li>
-<li><a href="https://vitest.dev/" target="_blank"><img align="center" src="https://img.shields.io/badge/Vitest-6E9F18.svg?style=for-the-badge&logo=Vitest&logoColor=white" alt="Vitest" width="55" height="55"/></a></li>
-<li><a href="https://react-bootstrap.netlify.app/" target="_blank"><img align="center" src="https://user-images.githubusercontent.com/87370519/228852532-a9d3d23d-a396-431a-86b1-55b07ca5bbc9.png" alt="react-bootstrap" width="55" height="55"/></a></li>
-<!--     <li><a href="" target="_blank"><img align="center" src="" alt="" width="55" height="55"/></a></li> -->
-  </ul>
+<br />  
+<div>
+<span><a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.svg" alt="html5" width="55" height="55"/></a></span>
+<span><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.svg" alt="css3" width="55" height="55"/></a></span>
+<span><a href="https://reactjs.org/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/react-js-icon.svg" alt="react js" width="55" height="55"/></a></span>
+<span><a href="https://redux.js.org/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.svg" alt="redux" width="55" height="55"/></a></span>
+<span><a href="https://vitejs.dev/" target="_blank"><img align="center" src="https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white" alt="Vite" width="55" height="55"/></a></span>
+<span><a href="https://vitest.dev/" target="_blank"><img align="center" src="https://img.shields.io/badge/Vitest-6E9F18.svg?style=for-the-badge&logo=Vitest&logoColor=white" alt="Vitest" width="55" height="55"/></a></span>
+<span><a href="https://react-bootstrap.netlify.app/" target="_blank"><img align="center" src="https://user-images.githubusercontent.com/87370519/228852532-a9d3d23d-a396-431a-86b1-55b07ca5bbc9.png" alt="react-bootstrap" width="55" height="55"/></a></span>
+<!--     <span><a href="" target="_blank"><img align="center" src="" alt="" width="55" height="55"/></a></span> -->
+  </div>
   
   
 </details>
@@ -90,23 +93,19 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO 
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
--->
 
 <!--
 - [GitHub Pages](https://miltonhenschel.github.io/air-polution-metrics-app/)
 -->
 
-<!--
-- [Live demo: Soon](https://miltonhenschel.github.io/air-polution-metrics-app/)
-  
-- [Video presentation: Soon]()
+- [GitHub Pages](https://miltonhenschel.github.io/tvmaze-show/)
 
+- [Video presentation](https://www.loom.com/share/77247b23cd784d4ebdcc1a4d5c8ab1ae)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
 
 <!-- GETTING STARTED -->
 
@@ -129,11 +128,11 @@ In order to run this project you need:
 - [ ] Clone this repository to your desired folder:
 
 ```
-git clone https://github.com/miltonHenschel/air-polution-metrics-app.git
+git clone https://github.com/miltonHenschel/tvmaze-show.git
 ```
 
 ```
-cd air-polution-metrics-app
+cd tvmaze-show
 ```
 
 - [ ] Open the file in your code editor
@@ -193,7 +192,7 @@ npm run build
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve design, include transitions and/or animations, etc.**
-- [ ] **Implement additional pages in the website: about me, references, etc.
+- [ ] **Implement additional pages in the website: about me, references, etc.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,7 +218,10 @@ If you like this project then don't forget to give a star ⭐ on this repository
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank **![](https://img.shields.io/badge/Microverse-blueviolet).**
+I would like to thank:
+
+- **![](https://img.shields.io/badge/Microverse-blueviolet)**
+- [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for the design guidelines of this app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
